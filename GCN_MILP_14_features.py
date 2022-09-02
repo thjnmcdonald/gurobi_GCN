@@ -345,11 +345,11 @@ def make_model_optimize_and_save(bt_procedures=[bt_lrr_gcn],
     if bilinear == True:
         m.Params.NonConvex = 2
     m.update()
-    
+
+
     # save the linear programming formulation
     file_name = f'{model_name}_mol_len_{find_mol_of_length}'
     m.write(f'GCN_lps/{file_name}.lp')
-
 
     # optimise and get objective
     m.optimize()
@@ -359,7 +359,7 @@ def make_model_optimize_and_save(bt_procedures=[bt_lrr_gcn],
     # save solution, relevant information and temrinal output (as backup)
     m.write(f'GCN_solutions/{file_name}.sol')
 
-    with open(f'GCN_results', mode = 'a+', newline='') as result_file:
+    with open(f'GCN_results.csv', mode = 'a+', newline='') as result_file:
         wr = csv.writer(result_file, quoting=csv.QUOTE_ALL)
         wr.writerow([path, gnn, layers, neurons, find_mol_of_length, m.Runtime, m.MIPGap, val])
 
