@@ -1,0 +1,69 @@
+model_name='GCN_16_3'
+gnn='GCN'
+neurons='16'
+layers='3'
+state_dict.keys()=odict_keys(['layers.0.lin.weight', 'layers.1.lin.weight', 'layers.2.lin.weight', 'fc11.weight', 'fc11.bias', 'fc12.weight', 'fc12.bias'])
+Set parameter Username
+Academic license - for non-commercial use only - expires 2023-06-18
+Set parameter TimeLimit to value 10
+Set parameter NonConvex to value 2
+Warning: constraint name "min constr" has a space
+Warning: Q constraint 0 doesn't have a name
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 785 rows, 1725 columns and 3405 nonzeros
+Model fingerprint: 0xb3fc0a23
+Model has 256 quadratic constraints
+Variable types: 737 continuous, 988 integer (968 binary)
+Coefficient statistics:
+  Matrix range     [4e-04, 6e+02]
+  QMatrix range    [2e-04, 6e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [4e-01, 6e+02]
+  RHS range        [4e-03, 5e+02]
+Presolve removed 82 rows and 714 columns
+Presolve time: 0.07s
+Presolved: 3535 rows, 1699 columns, 24310 nonzeros
+Presolved model has 512 bilinear constraint(s)
+Variable types: 1291 continuous, 408 integer (402 binary)
+
+Root relaxation: objective 1.847348e+02, 3666 iterations, 0.30 seconds (0.38 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  184.42098    0  593          -  184.42098      -     -    0s
+H    0     0                       0.8494578  184.42098      -     -    0s
+     0     0  165.60575    0  629    0.84946  165.60575      -     -    1s
+H    0     0                       1.2767868  165.60575      -     -    1s
+H    0     0                       1.5764602  157.00778  9860%     -    2s
+     0     0  156.58751    0  666    1.57646  156.58751  9833%     -    2s
+     0     0  149.37452    0  710    1.57646  149.37452  9375%     -    3s
+     0     0  145.24915    0  724    1.57646  145.24915  9114%     -    4s
+     0     0  124.89728    0  755    1.57646  124.89728  7823%     -    6s
+     0     0  117.16731    0  788    1.57646  117.16731  7332%     -    7s
+     0     0  113.88050    0  799    1.57646  113.88050  7124%     -    9s
+
+Cutting planes:
+  Gomory: 5
+  Cover: 4
+  Implied bound: 120
+  Clique: 26
+  MIR: 158
+  StrongCG: 4
+  Flow cover: 64
+  GUB cover: 3
+  Zero half: 4
+  Mod-K: 1
+  RLT: 86
+  Relax-and-lift: 32
+  BQP: 2
+
+Explored 1 nodes (19115 simplex iterations) in 10.01 seconds (10.15 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 1.57646 1.27679 0.849458 
+
+Time limit reached
+Best objective 1.576460160326e+00, best bound 1.138804994869e+02, gap 7123.8108%

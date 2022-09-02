@@ -13,7 +13,7 @@ def create_bash_script(location_list):
     mol_len_list = [4,6]
     for j, mol_len in enumerate(mol_len_list):
         for i, location in enumerate(location_list):
-            print(f'python GCN_MILP_14_features.py --location {location} --time_lim 10 --mol_len {mol_len} > GCN_outputs/{location}_mol_len_{mol_len}.txt')
+            print(f'python GCN_MILP_14_features.py --location {location} --time_lim 100 --mol_len {mol_len} > GCN_outputs/{location}_mol_len_{mol_len}.txt')
             print(f'echo \"progress: {(j)*len(location_list) + i + 1}/{(len(location_list))*(len(mol_len_list))} after: $SECONDS s\"')
 
 create_bash_script(location_list)

@@ -1,0 +1,85 @@
+model_name='GCN_64_3'
+gnn='GCN'
+neurons='64'
+layers='3'
+state_dict.keys()=odict_keys(['layers.0.lin.weight', 'layers.1.lin.weight', 'layers.2.lin.weight', 'fc11.weight', 'fc11.bias', 'fc12.weight', 'fc12.bias'])
+Set parameter Username
+Academic license - for non-commercial use only - expires 2023-06-18
+Set parameter TimeLimit to value 100
+Set parameter NonConvex to value 2
+Warning: constraint name "min constr" has a space
+Warning: Q constraint 0 doesn't have a name
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 1553 rows, 2877 columns and 4941 nonzeros
+Model fingerprint: 0xa3ae7407
+Model has 640 quadratic constraints
+Variable types: 1505 continuous, 1372 integer (1352 binary)
+Coefficient statistics:
+  Matrix range     [8e-05, 2e+03]
+  QMatrix range    [1e-04, 6e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [4e-02, 2e+03]
+  RHS range        [2e-02, 1e+03]
+Presolve removed 82 rows and 713 columns
+Presolve time: 0.20s
+Presolved: 10831 rows, 4388 columns, 136246 nonzeros
+Presolved model has 2048 bilinear constraint(s)
+Variable types: 3595 continuous, 793 integer (787 binary)
+
+Root relaxation: objective 3.223972e+02, 11558 iterations, 4.47 seconds (6.78 work units)
+Total elapsed time = 5.10s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  322.21877    0 1942          -  322.21877      -     -    5s
+H    0     0                       1.3239016  322.21877      -     -    6s
+H    0     0                       2.0904384  322.21877      -     -    6s
+H    0     0                       2.0904384  322.21877      -     -    6s
+     0     0  289.33745    0 1999    2.09044  289.33745      -     -   10s
+     0     0  288.41897    0 2019    2.09044  288.41897      -     -   12s
+     0     0  272.08670    0 2012    2.09044  272.08670      -     -   15s
+H    0     0                       2.8303091  253.84054  8869%     -   19s
+     0     0  253.84054    0 2141    2.83031  253.84054  8869%     -   21s
+     0     0  192.09228    0 2191    2.83031  192.09228  6687%     -   28s
+     0     0  192.09228    0 2238    2.83031  192.09228  6687%     -   32s
+     0     0  187.73141    0 2296    2.83031  187.73141  6533%     -   43s
+     0     0  187.60238    0 2376    2.83031  187.60238  6528%     -   47s
+     0     0  187.60238    0 2347    2.83031  187.60238  6528%     -   52s
+     0     0  187.60238    0 2353    2.83031  187.60238  6528%     -   55s
+     0     0  187.60238    0 2343    2.83031  187.60238  6528%     -   59s
+     0     0  187.60238    0 2367    2.83031  187.60238  6528%     -   63s
+     0     0  187.60238    0 2369    2.83031  187.60238  6528%     -   67s
+     0     0  187.60238    0 2362    2.83031  187.60238  6528%     -   70s
+     0     0  187.60238    0 2406    2.83031  187.60238  6528%     -   74s
+     0     0  187.60238    0 2410    2.83031  187.60238  6528%     -   76s
+     0     0  187.60238    0 2391    2.83031  187.60238  6528%     -   80s
+     0     0  187.60238    0 2401    2.83031  187.60238  6528%     -   84s
+     0     0  187.60238    0 2433    2.83031  187.60238  6528%     -   88s
+     0     0  187.60238    0 2419    2.83031  187.60238  6528%     -   91s
+     0     0  187.60238    0 2426    2.83031  187.60238  6528%     -   95s
+     0     0  187.60238    0 2467    2.83031  187.60238  6528%     -   98s
+
+Cutting planes:
+  Cover: 8
+  Implied bound: 158
+  Clique: 38
+  MIR: 678
+  StrongCG: 2
+  Flow cover: 106
+  GUB cover: 4
+  Zero half: 4
+  Mod-K: 1
+  RLT: 128
+  Relax-and-lift: 45
+  BQP: 18
+
+Explored 1 nodes (62859 simplex iterations) in 100.06 seconds (128.70 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 2.83031 2.09044 1.3239 
+
+Time limit reached
+Best objective 2.830309094083e+00, best bound 1.876023775441e+02, gap 6528.3353%

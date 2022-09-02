@@ -1,0 +1,91 @@
+model_name='GCN_64_2'
+gnn='GCN'
+neurons='64'
+layers='2'
+state_dict.keys()=odict_keys(['layers.0.lin.weight', 'layers.1.lin.weight', 'fc11.weight', 'fc11.bias', 'fc12.weight', 'fc12.bias'])
+Set parameter Username
+Academic license - for non-commercial use only - expires 2023-06-18
+Set parameter TimeLimit to value 100
+Set parameter NonConvex to value 2
+Warning: constraint name "min constr" has a space
+Warning: Q constraint 0 doesn't have a name
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 1629 rows, 3639 columns and 6586 nonzeros
+Model fingerprint: 0x84c02046
+Model has 576 quadratic constraints
+Variable types: 1481 continuous, 2158 integer (2116 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 3e+02]
+  QMatrix range    [8e-05, 5e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [2e-01, 3e+02]
+  RHS range        [2e-02, 2e+02]
+Presolve removed 145 rows and 1371 columns
+Presolve time: 0.18s
+Presolved: 12464 rows, 4968 columns, 129460 nonzeros
+Presolved model has 2304 bilinear constraint(s)
+Variable types: 3981 continuous, 987 integer (977 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    9988    1.1315534e+02   2.730672e+04   0.000000e+00      5s
+   19327    1.0437356e+02   0.000000e+00   0.000000e+00     10s
+
+Root relaxation: objective 1.043736e+02, 19327 iterations, 9.54 seconds (14.26 work units)
+Total elapsed time = 10.03s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  104.21198    0 2336          -  104.21198      -     -   11s
+H    0     0                       3.4895845  104.21198  2886%     -   11s
+H    0     0                       3.4895845  104.21198  2886%     -   12s
+     0     0   99.46818    0 2335    3.48958   99.46818  2750%     -   14s
+     0     0   96.34989    0 2345    3.48958   96.34989  2661%     -   16s
+     0     0   94.43635    0 2374    3.48958   94.43635  2606%     -   21s
+     0     0   93.78838    0 2429    3.48958   93.78838  2588%     -   23s
+     0     0   91.47865    0 2431    3.48958   91.47865  2521%     -   30s
+     0     0   90.85571    0 2516    3.48958   90.85571  2504%     -   33s
+     0     0   89.58604    0 2577    3.48958   89.58604  2467%     -   40s
+     0     0   86.43190    0 2465    3.48958   86.43190  2377%     -   46s
+     0     0   86.43190    0 2559    3.48958   86.43190  2377%     -   50s
+H    0     0                       3.5653263   86.43190  2324%     -   50s
+     0     0   80.01431    0 2732    3.56533   80.01431  2144%     -   55s
+     0     0   80.01431    0 2670    3.56533   80.01431  2144%     -   58s
+     0     0   80.01431    0 2675    3.56533   80.01431  2144%     -   61s
+     0     0   76.77998    0 2783    3.56533   76.77998  2054%     -   66s
+     0     0   76.77998    0 2775    3.56533   76.77998  2054%     -   70s
+     0     0   76.77998    0 2818    3.56533   76.77998  2054%     -   76s
+     0     0   76.77998    0 2781    3.56533   76.77998  2054%     -   79s
+     0     0   76.77998    0 2714    3.56533   76.77998  2054%     -   83s
+     0     0   76.77998    0 2762    3.56533   76.77998  2054%     -   87s
+     0     0   76.77998    0 2762    3.56533   76.77998  2054%     -   91s
+     0     0   76.77998    0 2795    3.56533   76.77998  2054%     -   95s
+     0     0   76.77998    0 2791    3.56533   76.77998  2054%     -   99s
+     0     0          -    0         3.56533   76.77998  2054%     -  100s
+
+Cutting planes:
+  Gomory: 2
+  Cover: 15
+  Implied bound: 130
+  Clique: 163
+  MIR: 755
+  StrongCG: 12
+  Flow cover: 105
+  GUB cover: 25
+  Zero half: 9
+  RLT: 303
+  Relax-and-lift: 145
+  BQP: 53
+  PSD: 1
+
+Explored 1 nodes (92402 simplex iterations) in 100.02 seconds (141.09 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 3.56533 3.48958 3.48958 
+
+Time limit reached
+Best objective 3.565326256794e+00, best bound 7.677997757354e+01, gap 2053.5190%

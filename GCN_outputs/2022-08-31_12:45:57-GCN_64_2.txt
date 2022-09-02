@@ -1,0 +1,64 @@
+model_name='GCN_64_2'
+gnn='GCN'
+neurons='64'
+layers='2'
+state_dict.keys()=odict_keys(['layers.0.lin.weight', 'layers.1.lin.weight', 'fc11.weight', 'fc11.bias', 'fc12.weight', 'fc12.bias'])
+Set parameter Username
+Academic license - for non-commercial use only - expires 2023-06-18
+Set parameter TimeLimit to value 10
+Set parameter NonConvex to value 2
+Warning: constraint name "min constr" has a space
+Warning: Q constraint 0 doesn't have a name
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 1041 rows, 2109 columns and 3917 nonzeros
+Model fingerprint: 0x9284b12f
+Model has 384 quadratic constraints
+Variable types: 993 continuous, 1116 integer (1096 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 3e+02]
+  QMatrix range    [8e-05, 5e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [2e-01, 3e+02]
+  RHS range        [2e-02, 2e+02]
+Presolve removed 82 rows and 714 columns
+Presolve time: 0.09s
+Presolved: 5967 rows, 2595 columns, 60470 nonzeros
+Presolved model has 1024 bilinear constraint(s)
+Variable types: 2059 continuous, 536 integer (530 binary)
+
+Root relaxation: objective 7.254885e+01, 4306 iterations, 0.76 seconds (0.97 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   72.10446    0 1116          -   72.10446      -     -    1s
+H    0     0                       2.2033652   72.10446  3172%     -    1s
+     0     0   64.90414    0 1138    2.20337   64.90414  2846%     -    2s
+     0     0   64.21727    0 1151    2.20337   64.21727  2815%     -    3s
+     0     0   62.12636    0 1205    2.20337   62.12636  2720%     -    5s
+     0     0   60.35571    0 1237    2.20337   60.35571  2639%     -    6s
+     0     0          -    0         2.20337   54.87963  2391%     -   10s
+
+Cutting planes:
+  Gomory: 15
+  Cover: 19
+  Implied bound: 187
+  Clique: 36
+  MIR: 238
+  StrongCG: 2
+  Flow cover: 104
+  GUB cover: 2
+  Zero half: 6
+  RLT: 140
+  Relax-and-lift: 31
+  BQP: 8
+
+Explored 1 nodes (15060 simplex iterations) in 10.00 seconds (10.60 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 2.20337 
+
+Time limit reached
+Best objective 2.203365201315e+00, best bound 5.487963250481e+01, gap 2390.7189%

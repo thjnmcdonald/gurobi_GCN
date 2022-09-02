@@ -1,0 +1,63 @@
+model_name='GCN_16_2'
+gnn='GCN'
+neurons='16'
+layers='2'
+state_dict.keys()=odict_keys(['layers.0.lin.weight', 'layers.1.lin.weight', 'fc11.weight', 'fc11.bias', 'fc12.weight', 'fc12.bias'])
+Set parameter Username
+Academic license - for non-commercial use only - expires 2023-06-18
+Set parameter TimeLimit to value 10
+Set parameter NonConvex to value 2
+Warning: constraint name "min constr" has a space
+Warning: Q constraint 0 doesn't have a name
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 657 rows, 1533 columns and 3149 nonzeros
+Model fingerprint: 0xe1e3f717
+Model has 192 quadratic constraints
+Variable types: 609 continuous, 924 integer (904 binary)
+Coefficient statistics:
+  Matrix range     [6e-04, 1e+02]
+  QMatrix range    [2e-04, 6e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [7e-01, 1e+02]
+  RHS range        [6e-03, 1e+02]
+Presolve removed 82 rows and 714 columns
+Presolve time: 0.03s
+Presolved: 2319 rows, 1251 columns, 17654 nonzeros
+Presolved model has 256 bilinear constraint(s)
+Variable types: 907 continuous, 344 integer (338 binary)
+
+Root relaxation: objective 5.533965e+01, 1861 iterations, 0.13 seconds (0.16 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   54.96150    0  419          -   54.96150      -     -    0s
+H    0     0                       1.8508884   54.96150  2869%     -    0s
+     0     0   48.83840    0  416    1.85089   48.83840  2539%     -    0s
+     0     0   46.32738    0  435    1.85089   46.32738  2403%     -    1s
+
+Cutting planes:
+  Gomory: 9
+  Cover: 63
+  Implied bound: 206
+  Clique: 115
+  MIR: 248
+  StrongCG: 4
+  Flow cover: 81
+  GUB cover: 3
+  RLT: 76
+  Relax-and-lift: 21
+  BQP: 4
+  PSD: 1
+
+Explored 1 nodes (4229 simplex iterations) in 1.21 seconds (0.97 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 1.85089 
+
+Solve interrupted
+Best objective 1.850888384694e+00, best bound 4.632737690806e+01, gap 2402.9806%
+
+Interrupt request received
