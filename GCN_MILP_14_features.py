@@ -361,7 +361,7 @@ def make_model_optimize_and_save(bt_procedures=[bt_lrr_gcn],
 
     with open(f'GCN_results.csv', mode = 'a+', newline='') as result_file:
         wr = csv.writer(result_file, quoting=csv.QUOTE_ALL)
-        wr.writerow([path, gnn, layers, neurons, find_mol_of_length, m.Runtime, m.MIPGap, val])
+        wr.writerow([path, gnn, layers, neurons, find_mol_of_length, m.Runtime, m.MIPGap, val, m.NumVars, m.NumConstrs, m.NumQConstrs])
 
 
     return val

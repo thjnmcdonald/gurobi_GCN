@@ -1,4 +1,0 @@
-model_name='GCN_64_3'
-gnn='GCN'
-neurons='64'
-layers='3'
