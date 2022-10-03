@@ -1,0 +1,109 @@
+SECONDS=0
+echo "started!"
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:33:27-GCN_32_1 --time_lim 36000 --mol_len 4 > GCN_outputs/GCN_32_1_mol_len_4.txt
+echo "progress: 1/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:03:07-GCN_16_2 --time_lim 36000 --mol_len 4 > GCN_outputs/GCN_16_2_mol_len_4.txt
+echo "progress: 2/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:04:42-GCN_32_2 --time_lim 36000 --mol_len 4 > GCN_outputs/GCN_32_2_mol_len_4.txt
+echo "progress: 3/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:45:57-GCN_64_2 --time_lim 36000 --mol_len 4 > GCN_outputs/GCN_64_2_mol_len_4.txt
+echo "progress: 4/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:53:27-GCN_16_3 --time_lim 36000 --mol_len 4 > GCN_outputs/GCN_16_3_mol_len_4.txt
+echo "progress: 5/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:57:55-GCN_32_3 --time_lim 36000 --mol_len 4 > GCN_outputs/GCN_32_3_mol_len_4.txt
+echo "progress: 6/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_13:01:54-GCN_64_3 --time_lim 36000 --mol_len 4 > GCN_outputs/GCN_64_3_mol_len_4.txt
+echo "progress: 7/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:33:27-GCN_32_1 --time_lim 36000 --mol_len 6 > GCN_outputs/GCN_32_1_mol_len_6.txt
+echo "progress: 8/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:03:07-GCN_16_2 --time_lim 36000 --mol_len 6 > GCN_outputs/GCN_16_2_mol_len_6.txt
+echo "progress: 9/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:04:42-GCN_32_2 --time_lim 36000 --mol_len 6 > GCN_outputs/GCN_32_2_mol_len_6.txt
+echo "progress: 10/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:45:57-GCN_64_2 --time_lim 36000 --mol_len 6 > GCN_outputs/GCN_64_2_mol_len_6.txt
+echo "progress: 11/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:53:27-GCN_16_3 --time_lim 36000 --mol_len 6 > GCN_outputs/GCN_16_3_mol_len_6.txt
+echo "progress: 12/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:57:55-GCN_32_3 --time_lim 36000 --mol_len 6 > GCN_outputs/GCN_32_3_mol_len_6.txt
+echo "progress: 13/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_13:01:54-GCN_64_3 --time_lim 36000 --mol_len 6 > GCN_outputs/GCN_64_3_mol_len_6.txt
+echo "progress: 14/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:33:27-GCN_32_1 --time_lim 36000 --mol_len 8 > GCN_outputs/GCN_32_1_mol_len_8.txt
+echo "progress: 15/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:03:07-GCN_16_2 --time_lim 36000 --mol_len 8 > GCN_outputs/GCN_16_2_mol_len_8.txt
+echo "progress: 16/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:04:42-GCN_32_2 --time_lim 36000 --mol_len 8 > GCN_outputs/GCN_32_2_mol_len_8.txt
+echo "progress: 17/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:45:57-GCN_64_2 --time_lim 36000 --mol_len 8 > GCN_outputs/GCN_64_2_mol_len_8.txt
+echo "progress: 18/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:53:27-GCN_16_3 --time_lim 36000 --mol_len 8 > GCN_outputs/GCN_16_3_mol_len_8.txt
+echo "progress: 19/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:57:55-GCN_32_3 --time_lim 36000 --mol_len 8 > GCN_outputs/GCN_32_3_mol_len_8.txt
+echo "progress: 20/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_13:01:54-GCN_64_3 --time_lim 36000 --mol_len 8 > GCN_outputs/GCN_64_3_mol_len_8.txt
+echo "progress: 21/21 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"

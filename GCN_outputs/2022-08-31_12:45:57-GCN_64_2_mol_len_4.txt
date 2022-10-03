@@ -1,8 +1,0 @@
-model_name='GCN_64_2'
-gnn='GCN'
-neurons='64'
-layers='2'
-state_dict.keys()=odict_keys(['layers.0.lin.weight', 'layers.1.lin.weight', 'fc11.weight', 'fc11.bias', 'fc12.weight', 'fc12.bias'])
-Set parameter Username
-Academic license - for non-commercial use only - expires 2023-06-18
-Set parameter TimeLimit to value 10800
