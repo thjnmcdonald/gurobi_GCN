@@ -1,0 +1,29 @@
+SECONDS=0
+echo "started!"
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:05:50-GCN_16_3 --time_lim 36000 --mol_len 4 > GCN_outputs/GCN_16_3_mol_len_4.txt
+echo "progress: 1/5 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:51:55-GCN_16_3 --time_lim 36000 --mol_len 4 > GCN_outputs/GCN_16_3_mol_len_4.txt
+echo "progress: 2/5 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:06:21-GCN_16_3 --time_lim 36000 --mol_len 4 > GCN_outputs/GCN_16_3_mol_len_4.txt
+echo "progress: 3/5 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:50:09-GCN_16_3 --time_lim 36000 --mol_len 4 > GCN_outputs/GCN_16_3_mol_len_4.txt
+echo "progress: 4/5 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
+python GCN_MILP_14_features.py --location 2022-08-31_12:51:30-GCN_16_3 --time_lim 36000 --mol_len 4 > GCN_outputs/GCN_16_3_mol_len_4.txt
+echo "progress: 5/5 after: $SECONDS s"
+SECONDS=0
+now=$(date +"%T")
+echo "Started at : $now"
